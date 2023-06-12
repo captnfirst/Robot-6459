@@ -139,7 +139,7 @@ public class Robot extends TimedRobot {
     }
 
     if (yardimciJoystick.getRawButton(5)) {
-      downTimer.start(); // -1 = cube / 1 = cone
+      downTimer.start();
       if (desiredPos == -1) {
         m_robotContainer.m_intake.setIntake(0.1);
         m_robotContainer.m_intake.setIntakeSolenoid(Value.kReverse);
